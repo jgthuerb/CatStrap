@@ -34,7 +34,7 @@
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#catstrap-sidebar">
 
     <div class="navbar navbar-white navbar-static-top" role="navigation">
       <div class="container">
@@ -68,10 +68,10 @@
       <div class="container">
         <div class="row">
           <div class="col-md-9">
-          <h2 class="section-header">Overview / Getting Started</h2>
+          <h2 class="section-header" id="css-overview">Overview / Getting Started</h2>
           <p class="lead">Make sure the following elements are in your project's code to ensure the best experience by users.</p>
           <h3>HTML5 doctype</h3>
-          <p>CatStrap/Bootstrap make use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. Include it at the beginning of all your projects.</p>
+          <p>CatStrap makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. Include it at the beginning of all your projects.</p>
 <pre>
 <code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
@@ -83,9 +83,9 @@
 <pre>
 <code class="html"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span></code>
 </pre>         
-          <h2 class="section-header">Buttons</h2>
+          <h2 class="section-header" id="css-buttons">Buttons</h2>
           <h3>Options</h3>
-          <p class="lead">Use the following button classes to quickly create a styled button.</p>
+          <p>Use the following button classes to quickly create a styled button.</p>
           <div class="example">
             <h4>Example</h4>
             <button type="button" class="btn btn-default btn-red">Red</button>
@@ -122,6 +122,7 @@
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-brick"</span><span class="nt">&gt;</span>Brick<span class="nt">&lt;/button&gt;</span></code>
 </pre>
           <h3>Sizes</h3>
+          <p>The button sizes are large, default, small, and extra small.</p>
           <div class="example">
             <h4>Example</h4>
               <p>
@@ -163,7 +164,13 @@
 </div>
           </div><!-- /.col-md-9 -->
           <div class="col-md-3">
-            Side Menu
+            <div id="catstrap-sidebar" data-spy="affix" data-offset-top="308">
+              <h2 class="section-header">Elements</h2>
+              <ul class="nav">
+                <li><a href="#css-overview">Overview</a></li>
+                <li><a href="#css-buttons">Buttons</a></li>
+              </ul>
+            </div>
           </div><!-- /.col-md-3 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
@@ -173,6 +180,17 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+      $('#catstrap-sidebar').affix({
+        offset: {
+          top: 0
+        , bottom: function () {
+            return (this.bottom = $('.footer').outerHeight(true))
+          }
+        }
+      })
+    </script>
+    <script>$('body').scrollspy({ target: '#catstrap-sidebar' })</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

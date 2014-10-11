@@ -37,7 +37,7 @@ body.download-page {
 .btn-outline-inverse {
 	color: #fff;
 	background-color: transparent;
-	border-color: #fff;
+	border: 1px solid #fff;
 }
 .btn-outline-inverse:hover, .btn-outline-inverse:focus, .btn-outline-inverse:active {
 	color: #ab0520;
@@ -69,16 +69,10 @@ h2.section-header {
 	border: 1px solid #ddd;
 	box-shadow: none;
 }
-/* CODE COLORS */
-/*.c {
-	color: #999;
+#catstrap-sidebar.affix {
+	top: 0px;
+	width: 263px;
 }
-.nt {
-	color: #2f6f9f;
+#catstrap-sidebar ul.nav li.active {
+	background: #eee;
 }
-.s {
-	color: #d44950;
-}
-.na {
-	color: #4f9fcf;
-}*/
