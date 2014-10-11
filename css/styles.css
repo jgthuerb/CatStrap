@@ -1,0 +1,84 @@
+body.download-page {
+	background: #ab0520;
+}
+.navbar {
+	margin-bottom: 0;
+}
+.navbar-white {
+	background: #fff;
+}
+.navbar-brand {
+	font-weight: bold;
+	font-size: 20px;
+}
+.download-area {
+	background: #ab0520;
+	color: #fff;
+	padding: 80px 0;
+	text-align: center;
+}
+.download-area .lead {
+	width: 80%;
+	font-size: 30px;
+	margin: 0 auto 2em;
+}
+.download-area img {
+	padding-bottom: 2em;
+}
+.download-area .btn {
+	font-size: 30px;
+}
+.navbar-nav > .active > a, 
+.navbar-nav > .active > a:hover, 
+.navbar-nav > .active > a:focus {
+	/*color: #fff;*/
+	background-color: #f9f9f9;
+}
+.btn-outline-inverse {
+	color: #fff;
+	background-color: transparent;
+	border-color: #fff;
+}
+.btn-outline-inverse:hover, .btn-outline-inverse:focus, .btn-outline-inverse:active {
+	color: #ab0520;
+	text-shadow: none;
+	background-color: #fff;
+	border-color: #fff;
+}
+.page-title {
+	padding: 3em 0;
+	background: #ab0520;
+	color: #fff;
+	margin-bottom: 2em;
+}
+.page-title h1 {
+	font-size: 4em;
+	margin-top: 0;
+	line-height: 1;
+}
+.page-title p {
+	font-size: 2em;
+}
+h2.section-header {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 0.1em;
+}
+.example {
+	position: relative;
+	padding: 15px 15px 15px;
+	border: 1px solid #ddd;
+	box-shadow: none;
+}
+/* CODE COLORS */
+.c {
+	color: #999;
+}
+.nt {
+	color: #2f6f9f;
+}
+.s {
+	color: #d44950;
+}
+.na {
+	color: #4f9fcf;
+}
