@@ -2728,9 +2728,9 @@ select[multiple].input-lg {
 }
 .btn {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 0.5em 1em;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 1em;
   font-weight: bold;
   line-height: 1.42857143;
   text-align: center;
@@ -2743,7 +2743,7 @@ select[multiple].input-lg {
       -ms-user-select: none;
           user-select: none;
   background-image: none;
-  border: 1px solid transparent;
+  border: none;
 }
 .btn:focus,
 .btn:active:focus,
@@ -3213,20 +3213,20 @@ fieldset[disabled] .btn-brick.active {
 /* END UA BUTTONS */
 .btn-lg,
 .btn-group-lg > .btn {
-  padding: 10px 16px;
-  font-size: 18px;
+  padding: 0.75em 1.5em;
+  font-size: 1.2em;
   line-height: 1.33;
 }
 .btn-sm,
 .btn-group-sm > .btn {
-  padding: 5px 10px;
-  font-size: 12px;
+  padding: 0.5em 0.8em;
+  font-size: .8em;
   line-height: 1.5;
 }
 .btn-xs,
 .btn-group-xs > .btn {
-  padding: 1px 5px;
-  font-size: 12px;
+  padding: .1em .5em;
+  font-size: .75em;
   line-height: 1.5;
 }
 .btn-block {
