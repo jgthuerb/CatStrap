@@ -21,6 +21,10 @@
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
 
+    <!-- HighlightJS -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/monokai_sublime.min.css">
+    <script src="js/highlight.pack.js"></script>
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -136,7 +140,27 @@
                 <button type="button" class="btn btn-red btn-xs">Extra Small Button</button>
                 <button type="button" class="btn btn-blue btn-xs">Extra Small Button</button>
               </p>
-          </div>
+          </div><!-- /.example -->
+<div class="highlight">
+<pre>
+<code class="html">&lt;!-- Large buttons --&gt;
+&lt;button type="button" class="btn btn-red btn-lg"&gt;Large Button&lt;/button&gt;
+&lt;button type="button" class="btn btn-blue btn-lg"&gt;Large Button&lt;/button&gt;
+
+&lt;!-- Default buttons --&gt;
+&lt;button type="button" class="btn btn-red"&gt;Default Button&lt;/button&gt;
+&lt;button type="button" class="btn btn-blue"&gt;Default Button&lt;/button&gt;
+
+&lt;!-- Small buttons --&gt;
+&lt;button type="button" class="btn btn-red btn-sm"&gt;Small Button&lt;/button&gt;
+&lt;button type="button" class="btn btn-blue btn-sm"&gt;Small Button&lt;/button&gt;
+
+&lt;!-- Extra Small buttons --&gt;
+&lt;button type="button" class="btn btn-red btn-xs"&gt;Extra Small Button&lt;/button&gt;
+&lt;button type="button" class="btn btn-blue btn-xs"&gt;Extra Small Button&lt;/button&gt;
+</code>
+</pre>
+</div>
           </div><!-- /.col-md-9 -->
           <div class="col-md-3">
             Side Menu
@@ -148,6 +172,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script>hljs.initHighlightingOnLoad();</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
